@@ -402,9 +402,9 @@ function getCanvasFromUrl(url, canvas, x = 0, y = 0, clearCanvas = false) {
                 url: url,
                 responseType: 'blob',
                 onload: function(response) {
-                    let urlCreator = window.URL || window.webkitURL;
-                    let imageUrl = urlCreator.createObjectURL(this.response);
-                    let img = new Image();
+                    var urlCreator = window.URL || window.webkitURL;
+                    var imageUrl = urlCreator.createObjectURL(this.response);
+                    var img = new Image();
                     img.onload = () => {
                         if (clearCanvas) {
                             ctx.clearRect(0, 0, canvas.width, canvas.height);
