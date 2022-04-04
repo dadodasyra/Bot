@@ -26,7 +26,7 @@ var currentOrderCtx = currentOrderCanvas.getContext('2d');
 var currentPlaceCanvas = document.createElement('canvas');
 
 // Global constants
-const BASE_URL = "placefrance.noan.dev";
+const BASE_URL = "mjollnir.ovh";
 const DEFAULT_TOAST_DURATION_MS = 10000;
 
 const COLOR_MAPPINGS = {
